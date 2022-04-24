@@ -1,0 +1,20 @@
+[package]
+description = "Created with Anchor"
+edition = "2018"
+name = "anchor-escrow"
+version = "0.1.0"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "anchor_giv"
+
+[features]
+cpi = ["no-entrypoint"]
+default = []
+no-entrypoint = []
+no-idl = []
+
+[dependencies]
+anchor-lang = "0.22.0"
+anchor-spl = {version = "0.22.0"}
+spl-token = {version = "3.3.0", features = ["no-entrypoint"]}
